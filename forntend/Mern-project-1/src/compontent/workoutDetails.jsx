@@ -23,7 +23,7 @@ const WorkoutDetails = ({workout}) => {
       <p className='text-[80%]'><strong>Load (in Kgs):</strong>{workout.load}</p>
       <p className='text-[80%]'><strong>Reps:</strong>{workout.reps}</p>
       <p className='text-[80%]'>{workout.createdAt}</p>
-      <span className=' absolute top-5 right-10 bg-gray-300 p-2 cursor-pointer  rounded-2xl' onClick={handleClick}>delete</span>
+      <span className=' absolute top-5 right-10 bg-gray-300 p-2 cursor-pointer  rounded-2xl' onClick={handleClick}><i class="ri-delete-bin-line"></i></span>
 
     </div>
   )
