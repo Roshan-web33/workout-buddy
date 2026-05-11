@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import WorkoutDetails from '../compontent/workoutDetails'
-import WorkoutForm from '../compontent/workoutForm'
+import WorkoutDetails from '../components/workoutDetails'
+import WorkoutForm from '../components/workoutForm'
 import { useWorkoutsContext } from '../hooks/useWorkoutContext'
 
 

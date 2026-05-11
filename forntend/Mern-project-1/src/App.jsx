@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './pages/Home'
-import Navbar from './compontent/Navbar'
-import orkoutDetails from './compontent/workoutDetails'
+import Navbar from './components/Navbar'
+import orkoutDetails from './components/workoutDetails'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+
 
 
 function App() {
@@ -16,6 +19,8 @@ function App() {
      <div className="pages">
       <Routes>
         <Route  path='/' element={<Home/>}/>
+         <Route  path='/login' element={<Login/>}/>
+          <Route  path='/signup' element={<Signup/>}/>
       </Routes>
      </div>
       </BrowserRouter>
