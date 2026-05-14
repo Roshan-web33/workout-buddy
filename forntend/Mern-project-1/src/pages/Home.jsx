@@ -18,7 +18,7 @@ const Home = () => {
            if(response.ok){
 
    
-            dispatch({type: "SET_WORKOUTS",payLoad: json})
+            dispatch({type: "SET_WORKOUT",payLoad: json})
 
            }
 
@@ -33,7 +33,7 @@ const Home = () => {
       <div className='home bg-gray-100 h-screen  flex pl-50  gap-50 pt-10 '>
       <div className="wokouts  flex flex-col w-[60%] gap-10">
         {
-       workouts && workouts.map((workout) => (
+       workouts.map((workout) => (
         <WorkoutDetails key={workout._id} workout={workout} />
         ))
       }

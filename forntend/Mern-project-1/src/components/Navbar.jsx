@@ -5,7 +5,7 @@ import { useLogout } from '../hooks/useLogout'
 const Navbar = () => {
 
   const handleClick =()=>{
-    
+    logout()
   }
   return (
     <header className='  '>
